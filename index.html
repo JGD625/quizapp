@@ -1,37 +1,32 @@
 <!DOCTYPE html>
-<html land="en-US">
+<html lang="en-US">
     <head>
         <title> How Well Do You Know Joe?</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
         <meta property="description" content="Quiz yourself on your coffee knowledge.">
-        <link rel="stylesheet" href="index.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+        <link rel="stylesheet" href="style.css" type="text/css">
     </head>
     <body>
-        <header>
-            <div class="top-container">
-                <div id="logo"><span>LOGO</span></div>
-                <span id="title">How Well Do You Know Joe?</span>
-                <div id="counter">5/10</div>
+        <header role="banner">
+              <div class="logo-container">
+                <a href="index.html">
+                    <img class="image hidden" id="logo" src="https://static.wixstatic.com/media/d9f074_26072fad24054863b546bf4383e93cba~mv2.png" alt="coffee cup"/>
+                </a>
             </div>
-
+                <h1 id="title">How Well Do You Know Joe?</h1>
         </header>
         <main>
-            <div class="question-container"><span>What fruit is added to a Roman?</span></div>
-            <div class="form-container">
-                <form>
-                    <button type="button" class="answer">A slice of melon.</button>
-                    <button type="button" class="answer">A grapefruit wedge.</button>
-                    <button type="button" class="answer">A lemon twist.</button>
-                    <button type="button" class="answer">Fresh berries.</button>
-                </form>
-
+            <div id="container"> 
+                <section id="start-page" role="main">
+                    <button id="js-start-button" class="startbutton">Shall we give it a go?</button>
+                </section>
             </div>
-
+            <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+            <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+            <script type="text/javascript" src="script.js"></script>
         </main>
-        <footer>
-
-        </footer>
-
     </body>
 </html>
